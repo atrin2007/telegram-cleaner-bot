@@ -1,7 +1,9 @@
+import os
 from telegram.ext import Updater, MessageHandler, Filters
 from telegram import MessageEntity
 
-TOKEN = "8246326883:AAEQ-Mg2vuqYK0S5BYwD9_fm9dPdKbZAqPI"
+# توکن رو از متغیر محیطی بخون
+TOKEN = os.getenv("TOKEN")
 
 IDS_TO_REMOVE = ['@khabar_gh', '@example_id', '@test_channel']
 
